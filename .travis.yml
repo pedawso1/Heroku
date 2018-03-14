@@ -1,5 +1,5 @@
-sudo: false
 language: java
+
 jdk:
   - oraclejdk8
   - openjdk8
@@ -13,7 +13,6 @@ script:
   - mkdir -p dpl_cd_upload
   - mv latest.zip dpl_cd_upload/latest.zip
 
-  
 install:
   - "mvn -N io.takari:maven:wrapper -Dmaven=3.2.5"
   - "./mvnw --show-version --errors --batch-mode test-compile dependency:go-offline"
