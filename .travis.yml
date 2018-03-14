@@ -1,12 +1,10 @@
- language: java
+language: java
 
- services: 
- - ant build
+services: mvn clean install
 
 sudo: true
 
-before_install:
-  - cd java
+
 
 deploy:
   provider: heroku
