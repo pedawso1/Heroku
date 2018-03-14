@@ -42,6 +42,19 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>2.0.0.RELEASE</version>
+				<configuration>
+					<mainClass>
+						Heroku.demo.DemoApplication
+					</mainClass>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
