@@ -5,6 +5,9 @@
 
 sudo: true
 
+before_install:
+  - cd java
+
 deploy:
   provider: heroku
   api_key:
