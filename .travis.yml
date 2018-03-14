@@ -1,0 +1,11 @@
+ language: java
+
+ services: 
+ - ant build
+
+sudo: true
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "6f21a96e-ce03-4e38-b6c5-372984040333"
