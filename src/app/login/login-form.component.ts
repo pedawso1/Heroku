@@ -31,7 +31,7 @@ export class LoginFormComponent implements OnInit {
     e.preventDefault();
 
 
-    var url = 'https://young-eyrie-20111.herokuapp.com/RevCo/LoginServlet';
+    var url = 'http://localhost:9999/RevCo/LoginServlet';
     const req = this.http.post(url, {
       userName: e.target.elements[0].value,
       passWord: e.target.elements[1].value
